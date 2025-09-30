@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/styleIndex/styleBody.css">
+    <link rel="stylesheet" href="/src/css/styleIndex/styleNav.css">
+    <link rel="stylesheet" href="/src/css/styleIndex/styleMain.css">
+    <link rel="stylesheet" href="/src/css/styleIndex/styleVideo.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <title>Command Center</title>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="logo-container">
+      <img class="logo" src="./Assets/HAPVIDA.png" alt="Logo Hapvida">
+    </div>
+    <h2>Command Center</h2>
+    <ul class="menu">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="vpn.html">FortClient VPN</a></li>
+      <li><a href="teleHealth.html">TeleHealth</a></li>
+      <li><a href="telePrescricao.html">TelePrescrição</a></li>
+      <li><a href="sistemaHapvida.html">Sistema Hapvida & Siga</a></li>
+      <li><a href="ponto.html">Ponto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header>
+      <h1>Portal do Command Center</h1>
+    </header>
+    <section class="card-grid">
+      <div class="card" onclick="mostrarVideo('https://www.youtube.com/embed/xqQvrP2vKQQ?autoplay=1')">
+        <h3>Reset de VPN</h3>
+      </div>
+      <div class="card" onclick="mostrarVideo('https://www.youtube.com/embed/xqQvrP2vKQQ?autoplay=1')">
+        <h3>Conectar na VPN</h3>
+      </div>
+      <div class="card" onclick="mostrarVideo('https://www.youtube.com/embed/xqQvrP2vKQQ?autoplay=1')">
+        <h3>Reiniciar VPN</h3>
+      </div>
+      <div class="card" onclick="mostrarVideo('https://www.youtube.com/embed/xqQvrP2vKQQ?autoplay=1')">
+        <h3>Desconectar VPN</h3>
+      </div>
+    </section>
+  </main>
+
+  <!-- Video overlay (apenas um, reutilizável) -->
+  <div class="video-overlay" id="videoOverlay">
+    <div class="video-content">
+      <iframe id="videoFrame" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <button onclick="fecharVideo()">Fechar</button>
+    </div>
+  </div>
+
+  <script src="./js/videos.js"></script>
+</body>
+</html>
